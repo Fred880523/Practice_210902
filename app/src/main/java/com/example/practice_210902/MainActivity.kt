@@ -12,9 +12,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val userAge = 8
+        if (userAge >= 20) {
+            Log.d("if문예시", "성인이 맞습니다.")
+        }
 
-val myName = "박광현"
-        Log.d("이름출력", "myName")
+        else if (userAge >= 17) {
+            Log.d("if문예시", "고등학생입니다.")
+
+        }
+
+        else if (userAge >= 14) {
+            Log.d("if문예시", "중학생 입니다.")
+
+        }
+
+        else {
+            Log.d("if문예시", "초등학생or미취학아동입니다.")
+        }
 
 
 
